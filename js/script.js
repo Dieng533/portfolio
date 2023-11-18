@@ -4,7 +4,7 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
-    menuIcon.classList.toggle('active');
+    navbar.classList.toggle('active');
 
 };
 
@@ -43,9 +43,9 @@ ScrollReveal({
 ScrollReveal().reveal('home-content, .heading',{origin : 'top'});
 ScrollReveal().reveal('.home-img, service-content, .portfolio-box,.contact form .heading',{origin : 'top'});
 
-
-const typed = new typed ('.multiple-text',{
-    strings: ['Développeur Web', 'Développeur mobile', 'Inphographe' ],
+/* typed js */
+const typed = new typed ('.multi-txt',{
+    strings: ['Développeur Web', 'Développeur mobile', 'Architecte web et mobile' ],
     typeSpeed: 100,
     backSpeed : 100,
     backDelay: 1000,

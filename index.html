@@ -1,254 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio DevDieng</title>
+    <title>DevDieng | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- box icone -->
+    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- box icone -->
-    <link rel="shortcut icon" href="images/logoDevDieng.png" type="media/png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logoDevDieng.png" type="image/png">
 </head>
-<body>
+<body class="dark-mode">
+    <!-- BOUTON MODE SOMBRE/CLAIR -->
+    <div class="theme-toggle">
+        <i class='bx bxs-sun' id="theme-icon"></i>
+    </div>
+
     <header class="header">
         <a href="#" class="logo">
-            <h1 style="color: #fff;">PORT<span>FOLIO</span></h1>
-            <!-- <img src="images/logoDevDieng.png" alt="logo Dieng le Développeur"> -->
+            <h1>DEV<span>DIENG</span></h1>
         </a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
-            <a href="#about">A propos</a>
-            <a href="#services">Service</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Formations</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <!-- section accueil -->
+
+    <!-- SECTION ACCUEIL -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Bonjour, c'est moi</h3>
-            <h1>Aly Dieng</h1>
-            <h3>Et je suis <span class="multi-txt">Développeur web et mobile</span></h3>
-            <p>
-                Je suis reconnu pour ma capacité à gérer efficacement les 
-                conflits et à favoriser un climat de travail harmonieux, ce 
-                qui renforce la cohésion au sein de mon équipe. Très
-                motivé en dans le domaine de la programmation.
+            <h3 class="greeting">Bonjour, je suis</h3>
+            <h1 class="name">Aly <span>Dieng</span></h1>
+            <h3 class="title">Je suis <span class="multi-txt"></span></h3>
+            <p class="description">
+                Développeur Full Stack passionné et formateur en développement web avec plus de 3 ans d'expérience.
+                Spécialisé dans la création d'applications web et mobiles modernes avec les dernières technologies.
             </p>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/aly-dieng-a67735226/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.facebook.com/dieng108?locale=fr_FR"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/aly-dieng-a67735226/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/dieng108" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
-        <a href="" class="btn">Télécharger CV</a>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Télécharger CV</a>
+                <a href="#contact" class="btn secondary">Me contacter</a>
+            </div>
         </div>
         <div class="home-img">
-            <img src="images/pp_aly.png" alt=""> 
+            <div class="img-container">
+                <img src="images/aly_pp.jpg" alt="Aly Dieng">
+                <div class="floating-element"></div>
+            </div>
         </div>
     </section>
-<section class="about" id="about">
-    <div class="about-img">
-        <img src="images/logoDevDieng.png" alt="">
-    </div>
-    <!-- a propos de moi -->
-    <div class="about-content">
-        <h2 class="heading">A propos <span>de Moi</span></h2>
-        <h3>Développeur fullstack</h3>
-        <p>
-            Je suis un étudiant qui obtenue son licence en Web Developper and mobile
-            à la recherche de stage et d'emploi dans mon domaine et je suis capable de former
-            beaucoup de gens en développement web.
-            Je suis reconnu pour ma capacité à gérer efficacement les 
-            conflits et à favoriser un climat de travail harmonieux, ce 
-            qui renforce la cohésion au sein de mon équipe. Très
-            motivé en dans la domaine de la programmation. <br>
-            Ainsi j'ai créer mon entreprise personnel qui s'appel DevDieng avec le logo à coté.
+
+    <!-- SECTION À PROPOS -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/logoDevDieng.png" alt="Logo DevDieng">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">À propos <span>de moi</span></h2>
+            <h3>Développeur Full Stack & Formateur</h3>
+            <p>
+                Je suis un développeur Full Stack passionné avec une expertise dans la création d'applications web et mobiles.
+                Fondateur de DevDieng, j'aide les entreprises à transformer leurs idées en solutions digitales performantes.
+            </p>
+            <p>
+                En tant que formateur, j'accompagne les débutants et professionnels dans leur apprentissage du développement web,
+                de la bureautique et des technologies numériques. Mon approche pédagogique se base sur la pratique et les projets concrets.
+            </p>
+            <div class="about-info">
+                <div class="info-item">
+                    <span>Expérience:</span>
+                    <p>5+ années</p>
+                </div>
+                <div class="info-item">
+                    <span>Disponibilité:</span>
+                    <p>Freelance & CDI</p>
+                </div>
+                <div class="info-item">
+                    <span>Email:</span>
+                    <p>alydieng533@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <span>Téléphone:</span>
+                    <p>77 533 57 20</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Discuter d'un projet</a>
+        </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Mes <span>Compétences</span></h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class='bx bx-code'></i> Frontend</h3>
+                <div class="skill-items">
+                    <div class="skill">
+                        <span>HTML/CSS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
             
-        </p>
-        <a href="#" class="btn">Lire Plus</a>
-    </div>
-</section>
-<!-- mes services -->
-<section class="services" id="services">
-
-    <h2 class="heading">Mes <span>Services</span></h2>
-
-    <div class="services-content">
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Développeur fullstack</h3>
-            <p>
-                Capable de créer des applications web dynamaique avec bootstrap, php, mySql et
-                coté mobile aussi avec Flutter et IONIC.
-            </p>
-            <a href="#" class="btn">Lire Plus</a>
+            <div class="skill-category">
+                <h3><i class='bx bx-server'></i> Backend</h3>
+                <div class="skill-items">
+                    <div class="skill">
+                        <span>Node.js</span>
+                        <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL/MongoDB</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class='bx bx-mobile-alt'></i> Mobile</h3>
+                <div class="skill-items">
+                    <div class="skill">
+                        <span>Flutter</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>React Native</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="services-box">
-            <i class='bx bxs-paint' ></i>
-            <h3>Infographie</h3>
-            <p>
-                Capable aussi à la création de Design avec Photoshop ou Illustrator
-                comme la création de logo, d'affiche et flyers.
-            </p>
-            <a href="#" class="btn">Lire Plus</a>
+    <!-- SECTION SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">Mes <span>Services</span></h2>
+        <div class="services-content">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Développement Full Stack</h3>
+                <p>
+                    Création d'applications web complètes avec les dernières technologies :
+                    React, Node.js, PHP, bases de données et APIs REST.
+                </p>
+                <a href="#contact" class="btn">Demander un devis</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-chalkboard'></i>
+                <h3>Formation Web</h3>
+                <p>
+                    Formation en développement web (HTML, CSS, JavaScript, PHP)
+                    adaptée à tous les niveaux, avec projets pratiques.
+                </p>
+                <a href="#contact" class="btn">Voir les programmes</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-desktop'></i>
+                <h3>Bureautique & Infographie</h3>
+                <p>
+                    Formation en outils bureautiques (Office) et création graphique
+                    (Photoshop, Illustrator) pour professionnels.
+                </p>
+                <a href="#contact" class="btn">Découvrir</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-cog'></i>
+                <h3>Maintenance Informatique</h3>
+                <p>
+                    Maintenance, optimisation et dépannage de systèmes informatiques,
+                    installation de systèmes d'exploitation.
+                </p>
+                <a href="#contact" class="btn">Prendre RDV</a>
+            </div>
         </div>
+    </section>
 
-        <div class="services-box">
-            <i class='bx bx-cog'></i>
-            <h3>Maintenancier informatique</h3>
-            <p>
-                Capable de réparer un ordinateur comme l'optimisation, l'installation de systéme d'exploitation
-                etc ....
-            </p>
-            <a href="#" class="btn">Lire Plus</a>
+    <!-- SECTION FORMATIONS -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Formations <span>Certifiantes</span></h2>
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="images/cybersecuty.jpg" alt="Cybersécurité">
+                <div class="portfolio-layer">
+                    <h4>Give1Project</h4>
+                    <p>2022 : Formation en Cybersécurité, Intelligence Artificielle et Cryptomonnaie</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/webM1.jpg" alt="Développement Web">
+                <div class="portfolio-layer">
+                    <h4>IMSAS</h4>
+                    <p>2022 : Licence en Développement Web et Mobile à l'IMSAS</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/reseau.jpg" alt="Maintenance">
+                <div class="portfolio-layer">
+                    <h4>CRE Bango</h4>
+                    <p>2021 : Maintenance Informatique au Centre de Recherche de Saint-Louis</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/arduino.jpg" alt="Arduino">
+                <div class="portfolio-layer">
+                    <h4>DEFAR SCI</h4>
+                    <p>2023 : Formation ARDUINO avec 9 projets réalisés en C++</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="services-box">
-            <i class='bx bx-paint'></i>
-            <h3>Bureautique</h3>
-            <p>
-                Capable de former des gens gens en Bureautique avec les outils d'office comme word,
-                xslx, power point, publisher et access.
-            </p>
-            <a href="#" class="btn">Lire Plus</a>
-        </div>
-
-        <div class="services-box">
-            <i class='bx bx-cog'></i>
-            <h3>Jeu video</h3>
-            <p>
-                Capable de former des gens en jeu video avec scratch comme la création d'histoire, de jeu et de dialogue
-            </p>
-            <a href="#" class="btn">Lire Plus</a>
-        </div>
-
-   
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contactez<span>-moi</span></h2>
         
-
-    </div>
-</section>
-<!-- section portefolio -->
-<section class="portfolio" id="portfolio">
-    <h2 class="heading">Formation <span>Attestante</span></h2>
-<div class="portfolio-content">
-    <div class="portfolio-box">
-        <img src="images/cybersecuty.jpg" alt="">
-
-        <div class="portfolio-layer">
-            <h4>Give1Project</h4>
-            <p>
-                2022 : En Cybersécurité , intelligence
-                Artificielle et Crytomonnaie
-            </p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-
-    <div class="portfolio-box">
-        <img src="images/webM1.jpg" alt="">
-        <div class="portfolio-layer">
-            <h4>IMSAS</h4>
-            <p>
-                2022 : En Web Developper à IMSAS(Institut des 
-                Métiers Sciences et appliques du Sénégal )
-            </p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-
-    <div class="portfolio-box">
-        <img src="images/reseau.jpg" alt="">
-        <div class="portfolio-layer">
-            <h4>CRE Bango</h4>
-            <p>
-                2021: En Maintenance Informatique, 
-                au Centre de Recherche et d’Essai de Saint-Louis (bango)
-            </p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
+        <div class="contact-info">
+            <div class="info-box">
+                <i class='bx bx-envelope'></i>
+                <h3>Email</h3>
+                <p>alydieng533@gmail.com</p>
+            </div>
+            <div class="info-box">
+                <i class='bx bx-phone'></i>
+                <h3>Téléphone</h3>
+                <p>77 533 57 20</p>
+            </div>
+            <div class="info-box">
+                <i class='bx bx-map'></i>
+                <h3>Adresse</h3>
+                <p>Saint-Louis - Rao - Poundionm</p>
+            </div>
         </div>
 
-    </div>
-
-    <div class="portfolio-box">
-        <img src="images/reseau.jpg" alt="">
-        <div class="portfolio-layer">
-            <h4>IMSAS</h4>
-            <p>
-                2022: En Administrateur Réseau Locaux à IMSAS saint-louis (Institut des 
-                Métiers Sciences et appliques du Sénégal ) 
-            </p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
+        <div class="contact-container">
+            <form action="#" id="contact-form" class="contact-form">
+                <div class="input-box">
+                    <input type="text" placeholder="Nom Complet" required>
+                    <input type="email" placeholder="Adresse Email" required>
+                </div>        
+                <div class="input-box">
+                    <input type="text" placeholder="Sujet" required>
+                    <input type="number" placeholder="Numéro WhatsApp" id="whatsapp-number">
+                </div>
+                <textarea placeholder="Votre message..." required></textarea>
+                
+                <div class="form-actions">
+                    <input type="submit" value="Envoyer le message" class="btn">
+                    <button type="button" class="btn whatsapp-btn" id="whatsapp-btn">
+                        <i class='bx bxl-whatsapp'></i> Contacter via WhatsApp
+                    </button>
+                </div>
+            </form>
         </div>
-    </div>
+    </section>
 
-    <div class="portfolio-box">
-        <img src="images/arduino.jpg" alt="">
-        <div class="portfolio-layer">
-            <h4>DEFAR SCI</h4>
-            <p>2023: En ARDUINO à Dakar avec réalisation de 9 projet en une semaine avec comme langage de programmation C++</p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>DEV<span>DIENG</span></h2>
+                <p>Développeur Full Stack & Formateur</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens rapides</h3>
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class='bx bx-envelope'></i> alydieng533@gmail.com</p>
+                <p><i class='bx bx-phone'></i> 77 533 57 20</p>
+            </div>
         </div>
-    </div>
-
-    <div class="portfolio-box">
-        <img src="images/moodle.png" alt="">
-        <div class="portfolio-layer">
-            <h4>FORCE-N</h4>
-            <p>2023 : En MOODLE en ligne avec le programme FORCE-N </p>
-            <a href="#"><i class='bx bx-link-external'></i></a>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aly Dieng | DevDieng. Tous droits réservés.</p>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
         </div>
-    </div>
+    </footer>
 
-</div>
-</section>
-<!-- section cobtact -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contacter-<span>Moi</span></h2>
-    <div class="Perso" id="Perso">
-        <h3>Email: <span style="color: rgb(0, 255, 179);">alydieng533@gmail.com</span></h3>
-        <h3>Téléphone: 77 533 57 20</h3>
-        <h3>Adresse: Saint-Louis - Rao - Poundionm</h3>
-    </div>
-    <form action="#" id="">
-        <div class="input-box">
-            <input type="text" placeholder="Nom Complet">
-            <input type="email" placeholder="Adress Email">
-        </div>        
-        <div class="input-box">
-            <input type="number" placeholder="Numéro téléphone">
-            <input type="text" placeholder="sujet">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message!"></textarea>
-        <input type="submit" value="Soumettre" class="btn">
-    </form>
-</section>
-<!-- section footer -->
-<footer class="footer">
-    <div class="footer-text">
-        <p>
-            Copyright &copy; 2024 by Aly Dieng | Tout droit est réserver
-        </p>
-    </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-</footer>
-
-
-<!--  scroll reveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!--lien typed.js cdn -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<script src="js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
